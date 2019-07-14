@@ -157,7 +157,7 @@ class ProductController extends Controller
             $data['products_list'] = DB::table('products')->where([ ['created_by', Auth::user()->id], ['is_deleted', '!=', 1]])->orderby('product_row_id', 'DESC')->paginate($product_per_page);
         }
     }    
-    
+    // test-2
 
     dd( $data['products_list'] ); 
     $data['product_dynamic_fields'] = config('site_config.product_dynamic_fields'); 
