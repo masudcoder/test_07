@@ -87,7 +87,7 @@ class SalesTemplateController extends Controller
 
 			// Save Template Heads
 			$template_csv_heads_data = array(); 
-			$arr = [];
+			$arr = []; 
 			$data = Excel::load($path, function($reader) {
 					})->get();
 
