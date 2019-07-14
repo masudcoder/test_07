@@ -158,7 +158,7 @@ class ProductController extends Controller
         }
     }    
     
-    //dd( $data['products_list'] );
+    dd( $data['products_list'] );
     $data['product_dynamic_fields'] = config('site_config.product_dynamic_fields'); 
 	$common_model = new Common();                         
     $data['categories_list'] = $common_model->allCategories();
