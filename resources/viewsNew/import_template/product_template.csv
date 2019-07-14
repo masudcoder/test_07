@@ -1,0 +1,4 @@
+name,handle,sku,vendor_sku,Aku Code,price,price unit,price_retail,price_distributor,primary_image,design_image,height,height_unit,width,width_unit,length,length_unit,weight,weight_unit,product_cost,product_stock,inventory_serial,update_source,number_of_pieces,ship_length,ship_length_unit,ship_height,ship_width,ship_weight,master_cartoon,meta_title,meta_keyword,meta_description
+xx99,new-shirt-handle,sku-123,ven-1,a1245,20,$,120,120,https://merchwareapp.com/p1.png,https://merchwareapp.com/d1.png,height1,M,1.1,Cm,2,M,3,lb,,,,,,5,m,5.5kg,,,mc1,blue t-shirts ,keyword1,blue t shirt is awesome
+y,shirt-2,sku-2,,ak278,13,$,113,113,https://merchwareapp.com/test.png,https://merchwareapp.com/d2.png,height2,,,,,,,,,,,,,6,cm,,,,mc2,titl2,keyword2,meta des
+Dress,shirt-3,sku-3,,ak323,12,$,112,112,https://merchwareapp.com/s3.png,https://merchwareapp.com/d3.png,height2,,,,,,,,,,,,,7,mm,1ib,,,mc3,titl3,,meta desc

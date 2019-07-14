@@ -1,0 +1,1 @@
+<img src="{{ url('/') }}/public/1.jpg" width="150" height="175" alt="image" />
