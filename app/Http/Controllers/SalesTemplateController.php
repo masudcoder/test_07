@@ -105,8 +105,8 @@ class SalesTemplateController extends Controller
 								];
 						break;		
 					}
-					
-					$headSampleData .= $value->$header[$i];
+					$temp_csv_header = trim($header[$i]);
+					$headSampleData .= $value->$temp_csv_header;
 					$headSampleData .= ',';
 					$count_sample_data++;
 				}	
