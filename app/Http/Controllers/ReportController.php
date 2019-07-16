@@ -413,7 +413,6 @@
 
             $obCommonLib = new CommonLib();
             $products = $obCommonLib->searchProduct($request);
-            $r = \App\Models\ProductSalesData::get();
             //dd($products);
             //exit;
             //echo '<pre>'.print_r($products, true).'</pre>'; exit;
@@ -526,8 +525,6 @@
                 $data['search_by_title'] = 'Search By' . $searchBy;
             }
 
-
-
             $data['search_result_page'] = 1;
             $data['product_dynamic_fields'] = config('site_config.product_dynamic_fields');
              if($request->submit == 'search') {                      
@@ -535,8 +532,6 @@
                   $data['search_result'] = 1;  
                   return view('reports.report_home', ['data'=>$data, 'fields'=>$this->editable_fields]);
             }
-
-
 
             $data['products_list'] = $products->get(array_merge($this->editable_fields, ["product_row_id"]))->toArray();
             
