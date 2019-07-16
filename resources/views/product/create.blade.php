@@ -1651,10 +1651,6 @@ Dropzone.options.HireImageDropzone = {
     })
 //End Of Dynamic Section
 	
-
-
-	
-	
 });
 </script>
 

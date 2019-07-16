@@ -156,16 +156,12 @@ class ProductController extends Controller
             session()->forget('search_result_products');
             $data['products_list'] = DB::table('products')->where([ ['created_by', Auth::user()->id], ['is_deleted', '!=', 1]])->orderby('product_row_id', 'DESC')->paginate($product_per_page);
         }
-    }    
-    // test-2
-
-    dd( $data['products_list'] ); 
+    } 
     $data['product_dynamic_fields'] = config('site_config.product_dynamic_fields'); 
 	$common_model = new Common();                         
     $data['categories_list'] = $common_model->allCategories();
 	$data['user_id'] = Auth::user()->id;
 	$data['import_templates'] = \App\Models\ImportTemplate::where('created_by', Auth::user()->id)->get();
-	dd($data['import_templates']);  exit;
 	return view('product.product_list', ['data'=>$data]);
     }
 
