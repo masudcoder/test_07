@@ -375,7 +375,7 @@
                     <td>{{ $ob->getFieldNameByField('collection_row_id', $row->collection_row_id, 'collection_name', 'Collection') }}</td>
                     <td>{{ $row->aku_code }}</td>
                     <td>{{ $row->aku2_code }}</td>
-                    <td>{{ str_limit($row->description,50) }}</td>
+                    <td>{!! str_limit($row->description,50) !!}</td>
                     <td>{{ $ob->getFieldNameByField('vendor_row_id', $row->vendor_row_id, 'vendor_name', 'Vendor') }}</td>
                     <td>{{ $ob->getFieldNameByField('category_row_id', $row->category_row_id, 'category_name', 'Category') }}</td>
                     

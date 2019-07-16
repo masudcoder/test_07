@@ -488,7 +488,7 @@
                                  </td>
                                 <td>
                                     <?php                             
-                                        echo \App\Models\ProductSalesData::where('product_row_id', $product['product_row_id'])->whereBetween('order_date',[$data['sales_data_from'], $data['sales_data_to']])->count(); 
+                                        //echo \App\Models\ProductSalesData::where('product_row_id', $product['product_row_id'])->whereBetween('order_date',[$data['sales_data_from'], $data['sales_data_to']])->count(); 
                                     ?>
                                 </td>
                             </tr>
